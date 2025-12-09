@@ -1,0 +1,53 @@
+SPI: UCB0 on all MCUs (arbiter + workers)
+
+MOSI: P1.6
+
+MISO: P1.7
+
+SCK: P2.2
+
+FRAM CS: moved to P2.3 (to free P3.0 for Node2 GNT as you requested).
+
+If your hardware still uses P3.0 for CS, either rewire or revert that macro yourself.
+
+REQ/GNT logic:
+
+Default state: pull-down, logic 0.
+
+Pulses: drive HIGH briefly.
+
+Interrupts: edges are low→high.
+
+Pin mapping on arbiter (master):
+
+Node 1:
+
+REQ1: P1.4 (input, pulldown, interrupt)
+
+GNT1: P1.3 (I/O, pulldown, interrupt for reset)
+
+Node 2:
+
+REQ2: P1.2 (input, pulldown, interrupt)
+
+GNT2: P3.0 (I/O, pulldown, interrupt for reset)
+
+Node 3:
+
+REQ3: P3.5 (input, pulldown, interrupt)
+
+GNT3: P3.6 (I/O, pulldown, interrupt for reset)
+
+On each worker, the local pins to arbiter are always:
+
+REQ: P1.4
+
+GNT: P1.3
+
+One “notification byte” in FRAM:
+
+Address chosen as FRAM_NOTIFY_ADDR 0x0000.
+
+Bit k set → “node with index k has new messages”.
+
+Mapping from bit index → node ID is done in arbiter.

@@ -1,0 +1,14 @@
+add baud support for 38400
+Generated on 5th October, 2025
+output_filename:  lnk_fr5949_single_2k_xxx.cmd
+lnk_filename:  lnk_msp430fr5949.cmd
+boot_size:  0xc00
+Device name:  msp430fr5949
+2025-10-05
+
+App start:     0x4400
+appl_end_addr: 0xf3ff
+Flex start:    0x10000
+flex_end_addr: 0xf400
+vector_addr:      0xf390
+

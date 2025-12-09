@@ -1,0 +1,3 @@
+- Folder properties -> General -> Device variant -> __MSP430FR5959__
+- replace .cmd file generated from Utilities/linkerGen in Config_App
+- remove .cmd in / if genearted to remove 100+ errors during compilation

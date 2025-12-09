@@ -1,0 +1,2 @@
+in main.c:
+change static uint32_t App_EndAddress_Upper = 0x13FFF - 8; // -8 for MSP5959

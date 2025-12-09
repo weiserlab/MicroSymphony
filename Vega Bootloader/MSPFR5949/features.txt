@@ -1,0 +1,4 @@
+- multiple boards
+- tristating of targets' UART TX pins
+- UART baud rate negotiation (yet to release) 
+- additional space for .data, .cinit and .const in APP FRAM (yet to release)
