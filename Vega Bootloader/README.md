@@ -36,7 +36,6 @@ In this system:
 │   ├── App1_5949/             # Example application for MSP430FR5949 (CCS project)
 │   └── Slave-parallel_5949/   # Bootloader for MSP430FR5949 (CCS project)
 ├── send2MSP-parallel.py       # Python script to send app image to host
-├── App1_5949.txt              # Example compiled application (TI-TXT format)
 └── README.md                  # This file
 ```
 
