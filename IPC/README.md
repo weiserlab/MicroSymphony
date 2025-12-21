@@ -79,8 +79,8 @@ Releases the FRAM lock so that other nodes can access it. Worker sends REQ pulse
 
 ### Mailbox Operations
 
-<a href="misc/mailbox.svg">
-  <img src="misc/mailbox.svg" alt="MicroSymphony mailbox layout" width="400">
+<a href="../misc/mailbox.svg">
+  <img src="../misc/mailbox.svg" alt="MicroSymphony mailbox layout" width="800">
 </a>
 
 **All mailbox operations must be performed while holding the FRAM lock.**
