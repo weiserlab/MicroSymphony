@@ -10,6 +10,11 @@ In this system:
 - **Target**: The microcontroller(s) that receive the bootloader and will be programmed over the multi-drop network
 - **Host**: An external microcontroller (MSP430FR5969 LaunchPad) that serves as the programmer, flashing firmware to all connected targets simultaneously
 
+<a href="../misc/bootloader_flow.svg">
+  <img src="../misc/bootloader_flow.svg" alt="VEGA Bootloader Flow" >
+</a>
+
+
 ## Features
 
 - **GPIO-based boot entry**: Boot pin based entry mechanism into boot mode on reset
@@ -56,6 +61,10 @@ In this system:
 All devices (host and targets) must share a common ground connection.
 
 ## Getting Started
+
+<a href="../misc/flashing_flow.svg">
+  <img src="../misc/flashing_flow.svg" alt="VEGA Bootloader Flow" >
+</a>
 
 ### Step 1: Flash the Bootloader to Target Devices
 
