@@ -1,0 +1,9 @@
+"./fram.obj"
+"./mailbox.obj"
+"./main.obj"
+"./uart.obj"
+"./worker.obj"
+"../lnk_msp430fr5949.cmd"
+-llibmpu_init.a
+-llibmath.a
+-llibc.a
