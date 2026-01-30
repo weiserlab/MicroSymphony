@@ -9,14 +9,17 @@ At its core, the platform enables predictable concurrency under tight energy bud
 
 ## Repository Structure
 
-- `hardware/`  
+- [`hardware/`](https://github.com/weiserlab/MicroSymphony/tree/main/hardware)  
   Schematics, PCB designs, and platform documentation (under consturction) for the MicroSymphony multi-MCU platform.
 
-- [`Vega_Bootloader/`](https://github.com/weiserlab/MicroSymphony/tree/main/IPC#ipc)  
+- [`Vega_Bootloader/`](https://github.com/weiserlab/MicroSymphony/tree/main/Vega%20Bootloader#vega-bootloader)  
   The Vega programming framework, which repurposes a shared UART bus to enable low-latency programming of multiple microcontrollers from a single host interface. It supports both broadcast and individually addressed firmware updates without requiring per-MCU debug probes.
 
 - [`IPC/`](https://github.com/weiserlab/MicroSymphony/tree/main/IPC#ipc)  
   The inter-processor communication layer that coordinates independent MCUs using a shared FRAM-based mailbox abstraction with explicit arbitration. This design provides deterministic, low-overhead communication suitable for intermittent and energy-constrained operation.
+
+- [`Applications/`](https://github.com/weiserlab/MicroSymphony/tree/main/Applications)
+  Applications designed using MicroSymphony framework. (Will be updated with more soon)
 
 ## Scope
 
